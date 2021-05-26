@@ -6,7 +6,7 @@ import {gs,colors} from "../../../styles";
 export default function Amenities() {
     return (
         <View style={gs.sectionContainer}>
-            <Text style={gs.sectionTitle}>Amenities Screen</Text>
+            <Text style={gs.sectionTitle}>Amenities</Text>
 
             <View style={styles.amenitiesContainer}>
                 <View style={styles.amenityContainer}>
