@@ -5,6 +5,9 @@ import {gs,colors} from '../../../styles'
 
 const starColors =[ "#e3ab53","#e3ab53","#e3ab53","#e3ab53","#8b6f43"]
 
+const Circle = props =>{
+    return <View style={[styles.circle,props.style]} />
+}
 export default function Stats() {
     return (
         <View style={styles.container}>
@@ -30,6 +33,11 @@ export default function Stats() {
                         })}
                     </View>
                     
+                </View>
+                <View style={styles.circleContainer}>
+                    <Circle style={{ backgroundColor : "#999",marginRight: -10, zIndex:3}}/>
+                    <Circle style={{ backgroundColor : "#888",marginRight: -10, zIndex:2}}/>
+                    <Circle style={{ backgroundColor : "#777",marginRight: -10, zIndex:1}}/>
                 </View>
             
         </View>
@@ -58,5 +66,16 @@ const styles = StyleSheet.create({
         color: colors.textSec,
         fontSize:10,
         fontWeight:"800"
+    },
+    circleContainer: {
+        flex:1,
+        flexDirection:"row",
+        justifyContent: "flex-end"
+    },
+    circle: {
+        width :36,
+        height: 36,
+        borderRadius: 36/2,
+        borderWidth: 2,
     }
 })
