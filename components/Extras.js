@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View,TouchableOpacity } from 'react-native'
-import{gs,colors} from '../../../styles'
+import{gs,colors} from '../styles'
 
 
 

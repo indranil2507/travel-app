@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import{go,colors, gs} from "../../../styles"
+import{go,colors, gs} from "../styles"
 
 const hotel={
     name:"Mt. Catlin Hotel",

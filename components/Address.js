@@ -1,13 +1,13 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity,Image} from 'react-native'
 import {Entypo} from '@expo/vector-icons'
-import {gs,colors} from '../../../styles'
+import{go,colors, gs} from "../styles"
 
 export default function Address() {
     return (
         <View>
             <View style={{backgroundColor:"#000"}}>
-            <Image  source={require("../../../assets/map.jpeg")} style={{height:200,opacity:0.2,width:"100%"}} />
+            <Image  source={require("../assets/map.jpeg")} style={{height:200,opacity:0.2,width:"100%"}} />
             </View>
             <View style={styles.addressContainer}>
             {/* <Image  source={require("../../../assets/location.svg")} style={{height:64,width:64}} /> */}

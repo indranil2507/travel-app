@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Feather,Ionicons,FontAwesome5,Entypo} from "@expo/vector-icons"
-import {gs,colors} from "../../../styles";
+import{go,colors, gs} from "../styles"
 
 export default function Amenities() {
     return (

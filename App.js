@@ -3,11 +3,22 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView} from 'react-native';
 import {colors} from './styles'
 import HotelView from './screens/HotelView'
+import TabNavigation from './Navigations/Navigator'
+import { NavigationContainer} from '@react-navigation/native'
+
+
+
 export default function App() {
   return (
-    <ScrollView style={styles.container}>
-      <HotelView/>
-    </ScrollView>
+   
+   <NavigationContainer>  
+   
+     
+   <TabNavigation/>
+     </NavigationContainer>
+    
+    
+  
      
       
    

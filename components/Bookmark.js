@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text,StyleSheet } from 'react-native'
 import {Feather} from '@expo/vector-icons'
-import {gs, colors} from '../../../styles'
+import {gs, colors} from '../styles'
 
 export default function Bookmark() {
     return (

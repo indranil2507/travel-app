@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import {Feather,Entypo} from '@expo/vector-icons'
-import {gs,colors} from '../../../styles'
+import {gs,colors} from '../styles'
 
 const starColors =[ "#e3ab53","#e3ab53","#e3ab53","#e3ab53","#8b6f43"]
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import { View, Text,StyleSheet,Image} from 'react-native'
 import {AntDesign,Entypo} from "@expo/vector-icons"
-import {gs} from '../../../styles'
+import{go,colors, gs} from "../styles"
 
 
 export default function index() {
     return (
         <View style={styles.container}>
-        <Image source={require("../../../assets/motel-1.jpg")} style={{width:"100%",height:300}}/>
+        <Image source={require("../assets/motel-1.jpg")} style={{width:"100%",height:300}}/>
         <View style={styles.topButtons}>
          <AntDesign name="close" size={24} color="#fff" />
         <View style={gs.rowCenter}>
