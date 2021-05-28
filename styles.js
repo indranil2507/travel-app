@@ -7,7 +7,8 @@ export const colors ={
     lightHl:"#888",
     pink:"#ea3372",
     text:"#fff",
-    textSec:"#aaa"
+    textSec:"#aaa",
+    orange:"#f97878"
 }
 
 
