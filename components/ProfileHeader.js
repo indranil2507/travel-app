@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View ,Image} from 'react-native'
+import { StyleSheet, Text, View ,Image,TouchableOpacity} from 'react-native'
 import {gs,colors} from '../styles'
 import {LinearGradient} from 'expo-linear-gradient'
 import {Ionicons,Entypo} from '@expo/vector-icons'
@@ -27,6 +27,16 @@ export default class ProfileHeader extends React.Component {
                                 style={{width:100,height:100,borderRadius:32}}/>
                     </View>
                 </View>
+
+                <View style={[gs.center,{marginVertical: 12}]}>
+                    <Text style={gs.title}>{name}</Text>
+                    <Text style={[gs.subTitle,{marginTop: 8}]}>Traveler/Blogger</Text>
+
+                    <TouchableOpacity style={styles.follow}>
+                        <Entypo name="plus" size={28} color="rgba(255,255,255,0.6)"/>
+                        <Text style={styles.followText}>Follow</Text>
+                    </TouchableOpacity>
+                </View>
                 
             </View>
             </LinearGradient>
@@ -39,9 +49,41 @@ export default class ProfileHeader extends React.Component {
   
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        justifyContent:"center",
-        alignItems:"center"
+    imageContainer:{
+        ...gs.center,
+        marginTop:16,
+        shadowColor: colors.darkBg,
+        shadowOffset: {heigth: 3,width: 1},
+        shadowOpacity:0.5,
+    },
+    check:{
+        ...gs.center,
+        backgroundColor:colors.text,
+        borderRadius:100,
+        width:32,
+        height:32,
+        shadowColor:colors.darkBg,
+        shadowOffset: {heigth: 3,width: 1},
+        shadowOpacity:0.3,
+        position:"absolute",
+        zIndex: 1,
+        right:-16,
+        bottom:16,
+    },
+    follow:{
+        ...gs.button,
+        ...gs.rowCenter,
+        paddingHorizontal:24,
+        paddingVertical:8,
+        marginTop:16,
+        borderColor:"rgba(255,255,255,0.5)",
+        borderWidth:2,
+
+    },
+    followText:{
+        fontSize:16,
+        color:colors.text,
+        fontWeight:"600",
+        marginLeft: 4
     }
 })

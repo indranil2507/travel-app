@@ -46,6 +46,13 @@ export const gs=StyleSheet.create({
         fontSize:30
 
     },
+    subTitle:{
+        fontWeight:"600",
+        textTransform:"uppercase",
+        color:"rgba(255,255,255,0.6)",
+        fontSize:15,
+        letterSpacing:1,
+    },
     smallText:{
         fontSize:12,
         fontWeight: "800",
