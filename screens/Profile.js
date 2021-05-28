@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View,ScrollView,StatusBar, ActivityIndicator} from 'react-native';
+import ProfileAbout from '../components/ProfileAbout';
 import ProfileHeader from '../components/ProfileHeader';
 import { ProfileStats } from '../components/ProfileStats';
 import '../styles'
@@ -36,8 +37,10 @@ export default class Profile extends React.Component {
     return (
         <View style={styles.container}>
           <ScrollView>
+          <StatusBar barStyle="light-content"/>
           <ProfileHeader user={this.state.user}/>
           <ProfileStats/>
+          <ProfileAbout/>
           </ScrollView>
         
          
